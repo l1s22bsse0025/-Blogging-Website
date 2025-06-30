@@ -5,6 +5,7 @@ on:
     branches: 
           - develop
 
+
 jobs:
   lint:
     name: Lint HTML and CSS
@@ -43,5 +44,8 @@ jobs:
       - name: Install Parcel
         run: npm install parcel
 
+      - name: Build project using Parcel
+        run: npx parcel build src/home.html
+
       - name: Build Website
-        run: npx parcel build ./src/index.html --dist-dir ./dist
+        run: npx parcel build ./src/home.html --dist-dir ./dist
