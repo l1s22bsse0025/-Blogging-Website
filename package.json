@@ -1,9 +1,11 @@
 {
-  "name": "blogging-website",
+  "name": "blogging-website2",
   "version": "1.0.0",
   "description": "",
   "scripts": {
+
     "build": "parcel build ./src/bolg.html --dist-dir ./dist"
+
   },
   "keywords": [],
   "author": "",

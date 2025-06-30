@@ -2,7 +2,9 @@ name: PR Validation
 
 on:
   pull_request:
-    branches: [develop]
+    branches: 
+          - develop
+
 
 jobs:
   lint:
@@ -42,5 +44,17 @@ jobs:
       - name: Install Parcel
         run: npm install parcel
 
+
       - name: Build Website
         run: npx parcel build ./src/blog.html --dist-dir ./dist
+
+      - name: Build project using Parcel
+
+        run: npx parcel build src/blog.html
+
+        run: npx parcel build src/blog.html
+
+      - name: Build Website
+        run: npx parcel build ./src/blog.html --dist-dir ./dist
+
+
