@@ -2,10 +2,13 @@
   "name": "blogging-website",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "parcel build ./src/index.html --dist-dir ./dist"
+    "start": "node index.js"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
